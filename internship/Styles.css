@@ -1,0 +1,170 @@
+
+
+.card1 {
+        width: 800px;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        padding: 70px;
+        margin: 50px auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+ 
+        .card-image {           
+            margin-right: 200px;           
+        }
+        
+        /* Modal popup ของ page job_description */
+        label {
+            font-weight: bold;
+        }
+
+        .modal-dialog {
+            max-width: 900px;
+        }
+    
+        /* ปรับขนาดและพื้นหลังของ modal-content */
+        .modal-content {
+            padding: 20px;
+            background-color: #f8fafa; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+        }
+    
+        /* ปรับขนาดและสีของ modal-header */
+        .modal-header {
+            padding: 10px;
+            background-color: #343a40; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+            color: white; /* เปลี่ยนสีตัวอักษรตามต้องการ */
+        }
+    
+        /* ปรับขนาดและสีของ modal-title */
+        .modal-title {
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    
+        /* ปรับขนาดและสีของปุ่มปิด modal */
+        .btn-close {
+            color: white; /* เปลี่ยนสีปุ่มตามต้องการ */
+        }
+    
+        /* ปรับขนาดและสีของ modal-body */
+        .modal-body {
+            padding: 20px;
+            font-size: 16px;
+        }
+    
+        /* ปรับขนาดและสีของปุ่มใน modal-footer */
+        .modal-footer .btn {
+            font-size: 16px;
+        }
+        /*  */
+
+    /* class nav */
+    li {
+        display: inline-block;
+        position: relative;
+        color: #ffffff;
+
+        cursor: pointer;
+        transition: 0.4s all ease;
+    }
+
+    li:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+    }
+
+    li::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #f06292;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+    }
+
+    li:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    /* Animation Text default.page */
+    .animate-charcter1 {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 50% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 25px;
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .animate-charcter2 {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 50% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 15px;
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+    body {
+        background-color: rgb(241, 240, 240);
+        color: rgb(1, 15, 14); /* เปลี่ยนสีตัวอักษรในเว็บไซต์ */
+    }
+    /* regis text */
+    .waviy {
+        position: relative;
+    }
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 40px;
+        color: #000;
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+    }
+    @keyframes flip {
+    
+        0%,
+        80% {
+            transform: rotateY(360deg)
+        }
+    }
+
+    /*  */
